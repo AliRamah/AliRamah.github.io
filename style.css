@@ -13,7 +13,7 @@ header {
     background: #020617;
 }
 
-/* Container بتاع الصورة + الاسم */
+/* Container name & photo */
 .profile-header {
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@ header {
     gap: 20px;
 }
 
-/* صورة البروفايل */
+/* profile pic */
 .profile-img {
     width: 120px;
     height: 120px;
@@ -30,7 +30,7 @@ header {
     border: 3px solid #38bdf8;
 }
 
-/* النص جنب الصورة */
+/* text beside pic */
 .profile-text h1 {
     margin: 0;
     font-size: 36px;
