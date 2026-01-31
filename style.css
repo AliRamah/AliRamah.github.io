@@ -12,6 +12,21 @@ header {
     background: #020617;
 }
 
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin: 0 12px;
+    font-size: 26px;
+    color: #e5e7eb;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #38bdf8;
+}
+
 section {
     max-width: 900px;
     margin: auto;
