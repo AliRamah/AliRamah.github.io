@@ -90,3 +90,67 @@ a:hover {
         font-size: 28px;
     }
 }
+
+
+.certifications {
+    text-align: center;
+}
+
+.cert-box {
+    perspective: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.cert-box input {
+    display: none;
+}
+
+.cert-card {
+    width: 320px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    cursor: pointer;
+}
+
+.cert-front,
+.cert-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cert-front {
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #020617;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.cert-back {
+    background: #020617;
+    color: #e5e7eb;
+    transform: rotateY(180deg);
+    padding: 20px;
+}
+
+.cert-back ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cert-back li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.cert-box input:checked + .cert-card {
+    transform: rotateY(180deg);
+}
