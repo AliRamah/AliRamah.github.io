@@ -150,7 +150,6 @@ a:hover {
     margin: 10px 0;
     font-size: 18px;
 }
-
 .cert-box input:checked + .cert-card {
     transform: rotateY(180deg);
 }
