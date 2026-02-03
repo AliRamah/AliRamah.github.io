@@ -153,3 +153,75 @@ a:hover {
 .cert-box input:checked + .cert-card {
     transform: rotateY(180deg);
 }
+
+
+
+/* ===== Cards Section ===== */
+.cards-section {
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.main-card {
+    width: 280px;
+    height: 200px;
+    perspective: 1200px;
+    text-decoration: none;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.main-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Front */
+.card-front {
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #020617;
+}
+
+.card-front i {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.card-front h3 {
+    margin: 5px 0;
+    font-size: 22px;
+}
+
+/* Back */
+.card-back {
+    background: #020617;
+    color: #e5e7eb;
+    transform: rotateY(180deg);
+    font-size: 18px;
+}
