@@ -1,118 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ali Ramah | Network & Cyber Security</title>
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Ramah | Electronics & Communications Engineer — Networking, Security, O-RAN</title>
+  <meta name="description" content="Portfolio of Ali Ramah, Electronics & Communications Engineer specializing in Networking, Network Security, Telecommunications, SDN, and O-RAN. CCNA certified, 2G/3G/4G/5G expertise." />
+  <meta name="keywords" content="Ali Ramah, Network Engineer, CCNA, Network Security, SDN, O-RAN, Telecommunications, 5G" />
+  <meta name="author" content="Ali Ramah" />
+ 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ali Ramah | Electronics & Communications Engineer" />
+  <meta property="og:description" content="Networking | Network Security | Telecommunications | SDN | O-RAN" />
+  <meta property="og:type" content="website" />
+ 
+  <!-- Favicon -->
+  <link rel="icon" href="assets/profile-placeholder.svg" type="image/svg+xml" />
+ 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+ 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    
-<header>
-     <div class="profile-header">
-        <img src="me.jpg" alt="Ali Ramah" class="profile-img">
-
-        <div class="profile-text">
-            <h1>Ali Ramah</h1>
-            <p>Network & Cyber Security Engineer</p>
+ 
+  <!-- Ambient background layers -->
+  <div class="gradient-bg" aria-hidden="true"></div>
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+ 
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <nav class="container nav-inner">
+      <a href="#home" class="logo"><i class="fa-solid fa-tower-broadcast"></i> Ali<span>.Ramah</span></a>
+ 
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+ 
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+ 
+    <!-- Mobile menu -->
+    <ul class="nav-menu-mobile">
+      <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#contact"><i class="fa-solid fa-address-card"></i> Contact</a></li>
+      <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#portfolio"><i class="fa-solid fa-layer-group"></i> Portfolio</a></li>
+    </ul>
+  </header>
+ 
+  <!-- ================= HERO ================= -->
+  <main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+ 
+      <div class="hero-text">
+        <span class="hero-badge"><i class="fa-solid fa-circle-check"></i> Open to Network Engineering Roles</span>
+ 
+        <h1 class="hero-name">Ali Ramah</h1>
+        <p class="hero-title">Electronics &amp; Communications Engineer</p>
+ 
+        <p class="hero-subtitle">
+          <span>CCNA</span><span class="sep">|</span>
+          <span>Network Security</span><span class="sep">|</span>
+          <span>2G/3G/4G/5G</span><span class="sep">|</span>
+          <span>O-RAN</span>
+        </p>
+ 
+        <div class="hero-actions">
+          <a href="assets/Ali_Ramah_CV.pdf" class="btn btn-primary" download>
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+          <a href="https://linkedin.com/in/ali-ramah" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/ali-ramah" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
         </div>
+      </div>
+ 
+      <div class="hero-visual">
+        <div class="profile-ring">
+          <img src="me.jpg" alt="Portrait of Ali Ramah" class="profile-img" />
+        </div>
+      </div>
+ 
     </div>
-    <!-- Social Icons -->
-    <div class="social-links">
-        <!-- CV -->
-        <a href="Ali Ramah CV .pdf" target="_blank" title="Download CV">
-            <i class="fa-solid fa-file-lines"></i>
-        </a>
-
-        <!-- LinkedIn -->
-        <a href="https://linkedin.com/in/ali-ramah/" target="_blank" title="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
-
-        <!-- Email -->
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aliramah52@gmail.com" target="_blank">
-        <i class="fa-solid fa-envelope"></i>
-        </a>
-        
+ 
+    <div class="scroll-indicator">
+      <span class="mouse"></span>
+      SCROLL
     </div>
-</header>
-
-<section>
-    <h2>About Me</h2>
-    <p>
-        Enthusiastic and motivated fresh graduate Communication Engineer with a strong interest in networking, network security and 
-        mobile networks. Seeking an entry-level opportunity to apply hands-on experience gained through practical training, 
-        contribute to real-world projects, and grow professionally in the networking field.
-    </p>
-</section>
-
-<section class="certifications">
-    <h2>Certifications</h2>
-
-    <div class="cert-box">
-        <input type="checkbox" id="cert-toggle">
-
-        <label for="cert-toggle" class="cert-card">
-            <div class="cert-front">
-                <h3>My Certifications</h3>
-                <p>Click to open</p>
-            </div>
-
-            <div class="cert-back">
-                <ul>
-                    <li>✔ CCNA</li>
-                    <li>✔ Networking Fundamentals</li>
-                    <li>✔ Cyber Security Training</li>
-                </ul>
-            </div>
-        </label>
-    </div>
-</section>
-
-    
-<section class="cards-section">
-    <h2>My Work</h2>
-
-    <div class="cards-container">
-
-        <!-- Certificates Card -->
-        <a href="certificates.html" target="_blank" class="main-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <i class="fa-solid fa-certificate"></i>
-                    <h3>Certificates</h3>
-                    <p>View my certifications</p>
-                </div>
-                <div class="card-back">
-                    <p>Click to open</p>
-                </div>
-            </div>
+  </section>
+ 
+  <!-- ================= CONTACT ================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Information</span></h2>
+        <p class="section-subtitle">Reach out for collaboration, opportunities, or a technical chat about networks.</p>
+      </div>
+ 
+      <div class="contact-grid">
+        <a href="mailto:ali.ramah@example.com" class="glass-card glow-border contact-card reveal">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h3>Email</h3>
+          <p>ali.ramah@example.com</p>
         </a>
-
-        <!-- Projects Card -->
-        <a href="projects.html" target="_blank" class="main-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <i class="fa-solid fa-diagram-project"></i>
-                    <h3>Projects</h3>
-                    <p>View my projects</p>
-                </div>
-                <div class="card-back">
-                    <p>Click to open</p>
-                </div>
-            </div>
+ 
+        <a href="https://linkedin.com/in/ali-ramah" target="_blank" rel="noopener noreferrer" class="glass-card glow-border contact-card reveal">
+          <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+          <h3>LinkedIn</h3>
+          <p>/in/ali-ramah</p>
         </a>
-
+ 
+        <a href="https://github.com/ali-ramah" target="_blank" rel="noopener noreferrer" class="glass-card glow-border contact-card reveal">
+          <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+          <h3>GitHub</h3>
+          <p>github.com/ali-ramah</p>
+        </a>
+ 
+        <a href="tel:+201000000000" class="glass-card glow-border contact-card reveal">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <h3>Phone</h3>
+          <p>+20 100 000 0000</p>
+        </a>
+      </div>
     </div>
-</section>
-
-<footer>
-    <p>© 2026 Ali Ramah</p>
-</footer>
-
+  </section>
+ 
+  <!-- ================= EDUCATION ================= -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Academic Background</span>
+        <h2 class="section-title">Education <span class="gradient-text">Timeline</span></h2>
+      </div>
+ 
+      <div class="timeline">
+        <div class="timeline-item glass-card reveal">
+          <div class="timeline-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Bachelor of Electronics and Communications Engineering</h3>
+          <p class="org">Capital University <span style="color:var(--color-text-dim); font-weight:400;">(Formerly Helwan University)</span></p>
+          <span class="date"><i class="fa-regular fa-calendar"></i> Graduation Year — 20XX</span>
+          <p>Specialized coursework in computer networks, telecommunications systems, digital signal processing, and network security fundamentals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ================= MAIN PORTFOLIO NAV CARDS ================= -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Explore My Work</span>
+        <h2 class="section-title">Portfolio <span class="gradient-text">Sections</span></h2>
+        <p class="section-subtitle">A curated overview of certifications, labs, and engineering projects.</p>
+      </div>
+ 
+      <div class="nav-cards-grid">
+ 
+        <a href="certifications.html" class="glass-card glow-border tilt-card nav-card reveal">
+          <div class="card-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h3>Certifications</h3>
+          <p>Professional certifications and training programs.</p>
+          <span class="card-link">View all <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+ 
+        <a href="network-labs.html" class="glass-card glow-border tilt-card nav-card reveal">
+          <div class="card-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <h3>Network Labs</h3>
+          <p>Hands-on networking laboratory exercises and configurations.</p>
+          <span class="card-link">View all <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+ 
+        <a href="security-projects.html" class="glass-card glow-border tilt-card nav-card reveal">
+          <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Network Security Projects</h3>
+          <p>Cybersecurity and network protection projects.</p>
+          <span class="card-link">View all <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+ 
+        <a href="sdn-projects.html" class="glass-card glow-border tilt-card nav-card reveal">
+          <div class="card-icon"><i class="fa-solid fa-diagram-project"></i></div>
+          <h3>SDN Projects</h3>
+          <p>Software Defined Networking projects and research.</p>
+          <span class="card-link">View all <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+ 
+        <a href="telecom-projects.html" class="glass-card glow-border tilt-card nav-card reveal">
+          <div class="card-icon"><i class="fa-solid fa-tower-cell"></i></div>
+          <h3>Telecommunications Projects</h3>
+          <p>Mobile networks, O-RAN and telecommunications projects.</p>
+          <span class="card-link">View all <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+ 
+      </div>
+    </div>
+  </section>
+  </main>
+ 
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>Ali Ramah</h3>
+          <p>Networking | Security | Telecommunications</p>
+        </div>
+        <div class="footer-socials">
+          <a href="mailto:ali.ramah@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://linkedin.com/in/ali-ramah" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/ali-ramah" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="tel:+201000000000" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; <span id="year"></span> Ali Ramah. All rights reserved.
+      </div>
+    </div>
+  </footer>
+ 
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+ 
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+ 
